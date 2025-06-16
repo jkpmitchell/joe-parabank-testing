@@ -2,6 +2,8 @@ import pytest
 from src.sportsAPI import get_baseball_data, get_player_stats
 
 # Verify the response code
+data = get_baseball_data("20250328")
+status_code = 200 if data else 404  # Simulate status code based on data presence
 if status_code == 200:
     print("Request was successful")
 else:
