@@ -14,5 +14,5 @@ response = requests.get(url, headers=headers)
 status_code = response.status_code
 
 # Get the JSON data from the response
-data = response.json()
+get_baseball_data = response.json()
 

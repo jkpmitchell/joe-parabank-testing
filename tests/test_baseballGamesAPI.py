@@ -2,7 +2,7 @@ import pytest
 from baseballGamesAPI import get_baseball_data
 
 # Verify the response code
-data = get_baseball_data("20250328")
+data = get_baseball_data()
 status_code = 200 if data else 404  # Simulate status code based on data presence
 if status_code == 200:
     print("Request was successful")
@@ -11,7 +11,7 @@ else:
 
 # Verify the response content
 def test_get_baseball_data():
-    data = get_baseball_data("20250328")
+    data = get_baseball_data()
     assert data is not None, "Data should not be None"
     assert data['body']['away'] == "Col"
     #assert isinstance(data, list), "Data should be a list"
