@@ -1,5 +1,5 @@
 import pytest
-from src.sportsAPI import get_baseball_data, get_player_stats
+from baseballGamesAPI import get_baseball_data
 
 # Verify the response code
 data = get_baseball_data("20250328")
@@ -12,5 +12,7 @@ else:
 # Verify the response content
 def test_get_baseball_data():
     data = get_baseball_data("20250328")
-    assert isinstance(data, list), "Data should be a list"
-    assert len(data) > 0, "Data should not be empty"
+    assert data is not None, "Data should not be None"
+    assert data['body']['away'] == "Col"
+    #assert isinstance(data, list), "Data should be a list"
+    #assert len(data) > 0, "Data should not be empty"
