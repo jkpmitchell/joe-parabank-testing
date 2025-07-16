@@ -1,4 +1,4 @@
-name: Python CI with Pytest
+name: Initial CI Workflow
 
 on:
   # push:
