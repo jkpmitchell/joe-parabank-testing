@@ -1,14 +1,8 @@
 from playwright.sync_api import Page, expect
+from src.core.baseTest import BaseTest
 from src.pages.base_page import BasePage
 
-class LoginPage(BasePage):
-    def __init__(self, page: Page):
-        super().__init__(page)
-        self.username_field = "input[name='username']"
-        self.password_field = "input[name='password']"
-        self.login_button = "input[value='Log In']"
-        self.error_message = ".error"
-    
+class LoginPage(BasePage):    
     def login(self, username: str, password: str):
         self.page.fill(self.username_field, username)
         self.page.fill(self.password_field, password)
