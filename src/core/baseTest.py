@@ -1,6 +1,9 @@
 # baseTest.py
 from playwright.sync_api import Page
 
+# BaseTest class for handling common test operations in Playwright 
+# This class provides methods for login and validation of login success.
+# It can be extended for other common test functionalities.
 class BaseTest:
     def __init__(self, page: Page):
         self.page = page

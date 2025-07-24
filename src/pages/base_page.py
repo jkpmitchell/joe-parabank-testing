@@ -4,6 +4,10 @@ from src.config.settings import Settings
 from src.utils.logger import Logger
 import time
 
+# BasePage class that provides common functionality for all pages.
+# This class implements the foundation for the Page Object Model pattern.
+# It includes methods for navigation, element interaction, waiting, validation, and utility functions.
+
 class BasePage:
     """
     Base Page Object class that provides common functionality for all pages.

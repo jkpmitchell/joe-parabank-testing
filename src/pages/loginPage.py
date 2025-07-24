@@ -2,6 +2,9 @@ from playwright.sync_api import Page, expect
 from src.core.baseTest import BaseTest
 from src.pages.base_page import BasePage
 
+# LoginPage class for handling login operations in the Parabank application.
+# This class extends BasePage to provide specific methods for login functionality.
+
 class LoginPage(BasePage):    
     def login(self, username: str, password: str):
         self.page.fill(self.username_field, username)
