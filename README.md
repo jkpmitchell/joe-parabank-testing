@@ -5,8 +5,8 @@
 This repository demonstrates my approach to **technical leadership and program coordination** using Parabank as a case study. It showcases how I combine deep technical expertise with systematic program management to deliver complex software initiatives.
 
 **What You'll See:**
-- 📋 **[Projects Board](link-to-projects-board)**: Strategic planning, work breakdown, and cross-functional coordination
-- 🐛 **[Bug Board](link-to-bug-board)**: Systematic defect management and quality assurance processes
+- 📋 **[Projects Board](https://github.com/users/jkpmitchell/projects/4)**: Strategic planning, work breakdown, and cross-functional coordination
+- 🐛 **[Bug Board](https://github.com/users/jkpmitchell/projects/9)**: Systematic defect management and quality assurance processes
 - 🔧 **Technical Framework**: Advanced automation using GitHub Actions, Playwright, and Python
 
 ## 📊 **Technical Leadership Approach**
